@@ -1,16 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4b79ff, #6a9bff);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 40px;
+  border-radius: 16px;
   text-align: center;
-  padding: 50px;
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.sub {
+  font-size: 14px;
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 button {
-  padding: 10px 20px;
+  background: #fff;
+  color: #4b79ff;
+  padding: 12px 20px;
   font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
+  transition: 0.2s ease;
 }
 
-#saida {
+button:hover {
+  background: #e8e8e8;
+}
+
+.saida {
   margin-top: 20px;
-  font-weight: bold;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 40px;
 }
