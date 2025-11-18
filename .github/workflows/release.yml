@@ -16,7 +16,8 @@ jobs:
       - name: Criar artefato do front
         run: |
           mkdir dist
-          cp -r * dist/
+          shopt -s extglob
+          cp -r !(dist) dist/
 
       - name: Upload artefato
         uses: actions/upload-artifact@v4
