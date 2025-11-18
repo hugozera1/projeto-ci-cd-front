@@ -1,8 +1,7 @@
 const btn = document.getElementById("btnChamarAPI");
 const saida = document.getElementById("saida");
 
-// Substitua pelo seu endpoint do Render
-const API_URL = "https://seu-back.onrender.com";
+const API_URL = "https://projeto-ci-cd-back-lj2k.onrender.com/";
 
 btn.addEventListener("click", async () => {
   try {
