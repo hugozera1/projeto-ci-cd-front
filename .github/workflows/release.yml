@@ -1,0 +1,25 @@
+name: Release Front-end
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Criar artefato do front
+        run: |
+          mkdir dist
+          cp -r * dist/
+
+      - name: Upload artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: front-build
+          path: dist
